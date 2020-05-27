@@ -10,3 +10,5 @@
 '''
 
 mac = 'AAAA:BBBB:CCCC'
+mac = mac.split(':')
+print(bin(int('0x'+mac[0],16))[2:]+bin(int('0x'+mac[1],16))[2:]+bin(int('0x'+mac[2],16))[2:])
