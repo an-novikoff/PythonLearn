@@ -45,3 +45,7 @@ london_co = {
         'routing': True
     }
 }
+name = input('Ведите имя усройства: ')
+par = input('Ведите имя параметра (ios, model, vendor, location, ip): ')
+
+print(london_co[name][par])
